@@ -1,0 +1,238 @@
+/* QuickBasket About Page Styles - Red Theme */
+.qb-about-container {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section with Red Overlay */
+.qb-hero-about {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.qb-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(210, 16, 39, 0.7);
+}
+
+.qb-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.qb-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.qb-brand-name{
+  color: #ffcccb;
+}
+
+.qb-hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Section Styles */
+.qb-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.qb-section-header h2 {
+  font-size: 2.5rem;
+  color: #d31027;
+  margin-bottom: 15px;
+}
+
+.qb-divider-about {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #d31027, #ea384d);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.qb-story-section, .qb-offer-section, .qb-choose-section, .qb-contact-section {
+  padding: 60px 0;
+}
+
+.qb-story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.qb-story-content p {
+  margin-bottom: 20px;
+}
+
+/* Categories Grid */
+.qb-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.qb-category-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-top: 4px solid #d31027;
+}
+
+.qb-category-card h3 {
+  color: #d31027;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.qb-category-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+/* Features Grid */
+.qb-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.qb-feature-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.qb-feature-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #d31027, #ea384d);
+  color: white;
+  border-radius: 50%;
+}
+
+.qb-feature-card h3 {
+  color: #d31027;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.qb-feature-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Contact Grid */
+.qb-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.qb-contact-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.qb-contact-icon-about {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff5f5;
+  color: #d31027;
+  border-radius: 50%;
+}
+
+.qb-contact-card h3 {
+  color: #d31027;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.qb-contact-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .qb-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .qb-hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .qb-section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .qb-hero-about {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .qb-hero-title {
+    font-size: 2rem;
+  }
+  
+  .qb-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .qb-categories-grid, .qb-features-grid, .qb-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

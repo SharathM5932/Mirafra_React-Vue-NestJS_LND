@@ -1,0 +1,137 @@
+/* Base Styles */
+.terms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.terms-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d32f2f; /* Primary red color */
+  margin-bottom: 1rem;
+  opacity: 0; /* For animation */
+}
+
+.terms-divider {
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(90deg, #d32f2f, #ff6659);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.terms-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.terms-section {
+  margin-bottom: 2.5rem;
+  opacity: 0; /* For animation */
+}
+
+.terms-subtitle {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.terms-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ff6659;
+  border-radius: 3px;
+}
+
+.terms-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.terms-footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #777;
+  font-size: 0.9rem;
+  opacity: 0; /* For animation */
+}
+
+/* Animations */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover Effects */
+.terms-section:hover {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
+
+.terms-section:hover .terms-subtitle {
+  color: #b71c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 1rem;
+  }
+  
+  .terms-title {
+    font-size: 2rem;
+  }
+  
+  .terms-content {
+    padding: 1.5rem;
+  }
+  
+  .terms-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+/* Scroll Effects */
+.terms-section {
+  transition: all 0.3s ease;
+}

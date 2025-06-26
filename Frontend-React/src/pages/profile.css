@@ -1,0 +1,501 @@
+.profile-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  background-color: #f8f9fa;
+}
+
+.profile-sidebar {
+  width: 280px;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-right: 1px solid #eaeaea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-user-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.profile-user-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-user-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.profile-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.profile-nav-item:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-nav-item.active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.profile-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.edit-profile-btn, .save-profile-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-profile-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+}
+
+.edit-profile-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.save-profile-btn {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+.save-profile-btn:hover {
+  background-color: #1565c0;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.profile-detail-item {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.profile-detail-item label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.profile-detail-item p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.profile-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.empty-orders, .empty-addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  color: #666;
+}
+
+.empty-orders svg, .empty-addresses svg {
+  margin-bottom: 1rem;
+}
+
+.shop-now-btn, .view-wishlist-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.shop-now-btn:hover, .view-wishlist-btn:hover {
+  background-color: #1565c0;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.order-id {
+  flex: 1;
+  font-weight: 500;
+}
+
+.order-date {
+  width: 120px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-status {
+  width: 120px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.order-total {
+  width: 100px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.order-toggle {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.order-details {
+  padding: 1rem;
+  background-color: white;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 1rem;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.order-item-info {
+  flex: 1;
+}
+
+.order-item-info h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.order-item-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.order-item-total {
+  width: 100px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.order-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.order-action-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.order-action-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.add-address-btn {
+  padding: 0.5rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-address-btn:hover {
+  background-color: #1565c0;
+}
+
+.address-form-container {
+  margin-bottom: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.form-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancel-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.save-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-btn:hover {
+  background-color: #1565c0;
+}
+
+.save-btn:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.addresses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.address-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.address-card.default {
+  border: 1px solid #1976d2;
+  background-color: #e3f2fd;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.default-badge {
+  padding: 0.25rem 0.5rem;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.address-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.set-default-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.set-default-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.delete-address-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ffebee;
+  color: #c62828;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-address-btn:hover {
+  background-color: #ffcdd2;
+}
+
+.wishlist-integration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  color: #666;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+}
+
+.wishlist-integration p {
+  margin-bottom: 1rem;
+}
