@@ -1,0 +1,107 @@
+/* Container */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f9fafc, #eef1f6);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card */
+.contact-card {
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Title */
+.contact-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1e2a38;
+}
+
+/* Info section */
+.contact-info {
+  margin-bottom: 36px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+/* Input fields */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0d6efd;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 14px 24px;
+  background-color: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  align-self: flex-end;
+}
+
+.submit-btn:hover {
+  background-color: #084298;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 32px 24px;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+}

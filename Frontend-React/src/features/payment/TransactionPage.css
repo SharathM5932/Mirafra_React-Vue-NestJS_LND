@@ -1,0 +1,62 @@
+.transaction-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.transaction-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.no-transactions {
+  text-align: center;
+  color: #666;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.transaction-table th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+.transaction-table tr:hover {
+  background-color: #fafafa;
+}
+
+.transaction-table .completed {
+  color: green;
+  font-weight: 600;
+}
+
+.transaction-table .pending {
+  color: orange;
+  font-weight: 600;
+}
+
+.transaction-table .failed {
+  color: red;
+  font-weight: 600;
+}
