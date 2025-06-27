@@ -1,0 +1,28 @@
+{
+  "name": "vue-ts-tailwind-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.3.0",
+    "axios": "^1.9.0",
+    "chart.js": "^4.4.9",
+    "pinia": "^3.0.2",
+    "toast": "^0.5.4",
+    "vue": "^3.4.0",
+    "vue-chartjs": "^5.3.2",
+    "vue-router": "^4.5.1",
+    "vue3-toastify": "^0.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.6.2",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^4.5.0",
+    "vite": "^4.0.0"
+  }
+}
